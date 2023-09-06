@@ -26,7 +26,7 @@ class CustomTriple <A:Any,B:Any,C:Any>(
         return third
     }
 
-    fun getFirstType(): KClass<out A> {
+    fun <reified> getFirstType(): KClass<out A> {
         return first::class
     }
     fun getSecondType(): KClass<out B> {

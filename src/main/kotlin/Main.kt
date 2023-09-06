@@ -68,7 +68,10 @@ fun main(args: Array<String>) {
 //val list= mutableListOf(1L,2L,3L,2.0,20)
 //   println(list.customSumNumber { true })
 
-
+val car: Car<Int> =Car("carName",2020,"CompanyName")
+    val car2: Car<String>  =Car("name2","2013","Company2")
+    println(car.date)
+    println(car2.date)
 
 }
 // Extension Functions

@@ -1,7 +1,7 @@
 
 
-abstract class SuperNumber(realValue: Number) {
-    private var realValue1=realValue
+abstract class SuperNumber(private val realValue: Number) {
+
 
 
     abstract fun isSimple(): Boolean
@@ -9,7 +9,7 @@ abstract class SuperNumber(realValue: Number) {
 
 //    Function is accessible in all subclasses
      fun getRealValue():Number {
-         return realValue1
+         return realValue
     }
 
     protected fun doSomething(){
